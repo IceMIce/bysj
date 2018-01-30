@@ -19,7 +19,7 @@ class Hospital(models.Model):
     section = models.CharField(max_length=500)
     doctor = models.CharField(max_length=50)
 
-class Oppointment(models.Model):
+class Appointment(models.Model):
     # 用户预约挂号表
     user_id = models.ForeignKey(User)
     location = models.CharField(max_length=50)
