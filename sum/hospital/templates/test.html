@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>Bootstrap 实例 - 水平表单</title>
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <form class="form-horizontal" action="/test">
+    <fieldset>
+      <div id="legend" class="">
+        <legend class="">表单名</legend>
+      </div>
+    <div class="control-group">
+
+          <!-- Prepended text-->
+          <label class="control-label">Prepended text</label>
+          <div class="controls">
+            <div class="input-prepend">
+              <span class="add-on">^_^</span>
+              <input name="text" class="span2" placeholder="placeholder" id="prependedInput" type="text">
+            </div>
+            <p class="help-block">Supporting help text</p>
+          </div>
+
+        </div>
+
+    <div class="control-group">
+
+          <!-- Select Basic -->
+          <label class="control-label">Select - Basic</label>
+          <div class="controls">
+            <select name="select" class="input-xlarge">
+              <option>Enter</option>
+              <option>Your</option>
+              <option>Options</option>
+              <option>Here!</option>
+            </select>
+          </div>
+
+        </div>
+
+    <div class="control-group">
+          <label class="control-label">Button</label>
+
+          <!-- Button -->
+          <div class="controls">
+            <button class="btn btn-success">Button</button>
+          </div>
+        </div>
+
+    </fieldset>
+  </form>
+</body>

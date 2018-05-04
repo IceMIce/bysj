@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>医院信息展示</title>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-20 column">
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    医院详细信息
+                </div>
+                <div class="panel-body">
+                    <table class="table table-hover table-bordered">
+                        <thead>
+                        <tr>
+                            <th>医院位置</th>
+                            <th>医院等级</th>
+                            <th>医院名称</th>
+                            <th>医院科室</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for hospital in hospital_obj %}
+                        <tr class="info">
+                            <td>{{hospital.area}}</td>
+                            <td>{{hospital.level}}</td>
+                            <td>{{hospital.name}}</td>
+                            <td>{{hospital.section}}</td>
+                        </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>医院信息展示</title>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <div class="panel panel-warning">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        添加医院信息
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <br>
+                    <br>
+                    <form class="form-horizontal" action="/add_hospital" role="form">
+                        <div class="form-group">
+                            <label for="area_id" class="col-sm-4 control-label">医院地区</label>
+                            <div class="col-sm-5">
+                                <input name="area" placeholder="请输入医院地区"
+                                       class="form-control" id="area_id">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="level_id"
+                                   class="col-sm-4 control-label">医院等级</label>
+                            <div class="col-sm-5">
+                                <select name="level" class="form-control" id="level_id">
+                                    <option value="三级医院">三级医院</option>
+                                    <option value="二级医院">二级医院</option>
+                                    <option value="一级医院">一级医院</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="name_id"
+                                   class="col-sm-4 control-label">医院名称</label>
+                            <div class="col-sm-5">
+                                <input value="{{ user_sign }}" name="name" placeholder="请输入医院名称"
+                                       class="form-control" id="name_id">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="section_id"
+                                   class="col-sm-4 control-label">医院等级</label>
+                            <div class="col-sm-5">
+                                <input name="section" placeholder="请选择医院科室"
+                                       class="form-control" id="section_id">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-6 col-sm-10">
+                                <button type="submit" class="btn btn-success">添加</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
